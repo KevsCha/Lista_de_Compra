@@ -1,50 +1,45 @@
-            var d=document;
-            var ls=localStorage;
-            var js=JSON;
-           //animacion de la barra de menu
-           document.querySelector(".bars__menu").addEventListener("click", animateBars );
-           let line1__bars = document.querySelector(".line1__bars-menu");
-           let line2__bars = document.querySelector(".line2__bars-menu");
-           let line3__bars = document.querySelector(".line3__bars-menu");
+var d=document;
+var ls=localStorage;
+var js=JSON;
+//animacion de la barra de menu
+document.querySelector(".bars__menu").addEventListener("click", animateBars );
+let line1__bars = document.querySelector(".line1__bars-menu");
+let line2__bars = document.querySelector(".line2__bars-menu");
+let line3__bars = document.querySelector(".line3__bars-menu");
            function animateBars(){
                line1__bars.classList.toggle("activeline1__bars-menu")
                line2__bars.classList.toggle("activeline2__bars-menu")
                line3__bars.classList.toggle("activeline3__bars-menu")
            }
            //esto hace que el menu de navegacion sea visible
-            const botonbar = document.querySelector(".bars__menu")
-            const itemm = document.querySelector(".menu-menu")
-          
-            botonbar.addEventListener("click" , () => {
-            itemm.classList.toggle("visiblee")
-            })
+const botonbar = document.querySelector(".bars__menu")
+const itemm = document.querySelector(".menu-menu")
+
+botonbar.addEventListener("click" , () => {
+	itemm.classList.toggle("visiblee")
+})
             
 
     
-              //esto hace que el menu de ingresar nombre de la lista sea visible
-           const botonBar = document.querySelector(".botonFlotante")
-           const item = document.querySelector(".cuadro-nombreDeLalista")
-           const crear=document.querySelector("#botonDeGuardar-lista")
-           const volver =document.querySelector("#flecha1")
-           const recibecheck = document.querySelector(".recibe-check")
-           const botonopcionSupermercados = document.querySelector(".btnsupermercado-visible")
-          //  const borrar = document.querySelector(".cuadroo")
+//esto hace que el menu de ingresar nombre de la lista sea visible
+const botonBar = document.querySelector(".botonFlotante")
+const item = document.querySelector(".cuadro-nombreDeLalista")
+const crear=document.querySelector("#botonDeGuardar-lista")
+const volver =document.querySelector("#flecha1")
+const recibecheck = document.querySelector(".recibe-check")
+const botonopcionSupermercados = document.querySelector(".btnsupermercado-visible")
+//  const borrar = document.querySelector(".cuadroo")
 
-          //  borrar
+//  borrar
     
-            volver.addEventListener("click" , () => {
-           item.classList.toggle("visible")
-    
+volver.addEventListener("click" , () => {
+    item.classList.toggle("visible")
     })
-           
-        botonBar.addEventListener("click" , () => {
-        item.classList.toggle("visible")
-    
+botonBar.addEventListener("click" , () => {
+	item.classList.toggle("visible")
     })
-    
-           crear.addEventListener("click" , () => {
-           item.classList.toggle("visible")
-    
+crear.addEventListener("click" , () => {
+    item.classList.toggle("visible")
     })
    
     // botonopcionSupermercados.addEventListener("click", () => {
@@ -96,42 +91,42 @@
            {id:2, nombre:"Harina", precio: "0.75",  lugar:"mercadona",  thumbnailUrl:"https://m.media-amazon.com/images/I/81jQBadLd4L._AC_SY879_.jpg"},
            {id:3, nombre:"Leche", precio: "0.74",  lugar:"mercadona", thumbnailUrl: "https://estaticos-cdn.prensaiberica.es/clip/8e6ffacf-814d-4b4d-b890-4e407717d7ca_16-9-aspect-ratio_default_0.jpg"},
            {id:4, nombre:"Macarron", precio: "1.16",  lugar:"mercadona", thumbnailUrl:"https://a2.soysuper.com/35563eff0cb3284b5e1dc5d4b7d4519b.340.340.0.min.wmark.5d223101.jpg"},
-           {id:5, nombre:"Aguacate", precio: "1.22",  lugar:"mercadona", thumbnailUrl:"https://solidstarts.com/wp-content/uploads/introducing-avocado-to-babies-1-768x576@2x.jpg"},
+           {id:5, nombre:"Aguacate", precio: "1.22",  lugar:"mercadona", thumbnailUrl:"https://exoticfruitbox.com/wp-content/uploads/2015/10/aguacate.jpg"},
            {id:6, nombre:"Cebolla", precio: "1.45",  lugar:"mercadona", thumbnailUrl:"https://s.cornershopapp.com/product-images/3272555.jpg?versionId=4G1_3KsijyxDxWDvsWs9nKCnh18CjetO"},
-           {id:7, nombre:"Pimiento", precio: "0.77",  lugar:"mercadona", thumbnailUrl:"https://d2ohdpvxj0yo9f.cloudfront.net/products/pi/pimiento-rojo-21-de-mercadona-1649707429_m.jpg"},
+           {id:7, nombre:"Pimiento", precio: "0.77",  lugar:"mercadona", thumbnailUrl:"https://carmencita.com/shop/1355-large_default/pimenton-dulce-.jpg"},
            {id:8, nombre:"Coca Cola", precio: "1.39",  lugar:"mercadona", thumbnailUrl:"https://www.supermercadoseljamon.com/documents/10180/892067/30035100_G.jpg"},
            {id:9, nombre:"Queso", precio: "1.10",  lugar:"mercadona", thumbnailUrl:"https://pbs.twimg.com/media/EKZ-e2AX0AA3dEt?format=png&name=small"},
            {id:10, nombre:"Yogurt", precio: "1.45",  lugar:"mercadona", thumbnailUrl:"https://serabueno.com/wp-content/uploads/yogur-sabores-0-materia-grasa-y-azucar-hacendado.jpg"},
            {id:11, nombre:"Chocolate", precio: "1.05",  lugar:"mercadona",thumbnailUrl:"https://www.infopack.es/upfiles/noticies_img/A_356980724.jpg"},
-           {id:12, nombre:"Ajo", precio: "1",  lugar:"mercadona", thumbnailUrl:"https://cdn.deliberry.com/images/1056585/resize/1600/1600/3.jpg"},
-           {id:13, nombre:"Nararnja", precio: "3.57",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1056433/resize/1600/1600/3.jpg"},
-           {id:14, nombre:"Pera", precio: "0.38",  lugar:"mercadona", thumbnailUrl:"https://cdn.deliberry.com/images/1056399/resize/1600/1600/3.jpg"},
-           {id:15, nombre:"Aceite girasol 1 litro", precio: "3.00",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1035071/resize/600/600/3.jpg"},
-           {id:16, nombre:"Patata", precio: "5.99",  lugar:"mercadona", thumbnailUrl:"https://cdn.deliberry.com/images/79076/resize/600/600/3.jpg"},
-           {id:17, nombre:"Azucar", precio: "0.77",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1049068/resize/1600/1600/3.jpg"},
-           {id:18, nombre:"Papel", precio: "7.30",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1058113/resize/1600/1600/3.jpg"},
-           {id:19, nombre:"Pimienta", precio: "0.95",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1047698/resize/1600/1600/3.jpg"},
-           {id:20, nombre:"Comino", precio: "0.90",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1047711/resize/1600/1600/3.jpg"},
-           {id:21, nombre:"Lechuga", precio: "0.85",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1056478/resize/1600/1600/3.jpg"},
-           {id:22, nombre:"Cola Cao", precio: "3.49",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1050790/resize/1600/1600/3.jpg"},
-           {id:23, nombre:"Platano de canarias", precio: "0.54",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1056375/resize/1600/1600/3.jpg"},
-           {id:24, nombre:"Zanahoria", precio: "0.59",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1056630/resize/1600/1600/3.jpg"},
-           {id:25, nombre:"Pollo entero", precio: "6.17",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1051268/resize/1600/1600/3.jpg"},
+           {id:12, nombre:"Ajo", precio: "1",  lugar:"mercadona", thumbnailUrl:"http://frutasfercas.com/wp-content/uploads/2018/03/ajo-600x496.jpg"},
+           {id:13, nombre:"Naranja", precio: "3.57",  lugar:"mercadona", thumbnailUrl: "https://www.shutterstock.com/shutterstock/photos/1927497314/display_1500/stock-photo-orange-with-cut-in-half-and-green-leaves-isolated-on-white-background-1927497314.jpg"},
+           {id:14, nombre:"Pera", precio: "0.38",  lugar:"mercadona", thumbnailUrl:"https://static.libertyprim.com/files/familles/poire-large.jpg?1569271830"},
+           {id:15, nombre:"Aceite girasol 1 litro", precio: "3.00",  lugar:"mercadona", thumbnailUrl: "https://www.ahorramas.com/on/demandware.static/-/Sites-ahorramas-master/default/dw9f6113c8/Assets/084581_C1C1/large/d/e/e/c/deecf598de12bbe681e297b52f7f60055bdbd286_084581_C1C1.jpg"},
+           {id:16, nombre:"Patata", precio: "5.99",  lugar:"mercadona", thumbnailUrl:"https://www.missupermercados.com/images/p/patata-varios-malla-3-kg-pid-50910966.jpg"},
+           {id:17, nombre:"Azucar", precio: "0.77",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/22bde615ab98c08ef9b3bc9d57b21133.340.340.0.min.wmark.b5405202.jpg"},
+           {id:18, nombre:"Papel", precio: "7.30",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/4f0a3f96c75f66ec57c2fcfc0a92dad5.340.340.0.min.wmark.bcdb8457.jpg"},
+           {id:19, nombre:"Pimienta", precio: "0.95",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/719f44c03ca564adbcb56f60b1fd8eed.340.340.0.min.wmark.aceadc11.jpg"},
+           {id:20, nombre:"Comino", precio: "0.90",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/e5c4b3945b3b11b0b2085d5b2b3b4b3f.340.340.0.min.wmark.52bbef02.jpg"},
+           {id:21, nombre:"Lechuga", precio: "0.85",  lugar:"mercadona", thumbnailUrl: "https://a2.soysuper.com/c8e8246e22bd5c377ce86d4e42c4faf4.340.340.0.min.wmark.bf9983ba.jpg"},
+           {id:22, nombre:"Cola Cao", precio: "3.49",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/09a78f848bca869243ebee151197a8d3.340.340.0.min.wmark.ded3d9d8.jpgg"},
+           {id:23, nombre:"Platano de canarias", precio: "0.54",  lugar:"mercadona", thumbnailUrl: "https://a2.soysuper.com/f515be0da14ea3ad59702c8ca71cd7b0.340.340.0.min.wmark.34090a9d.jpg"},
+           {id:24, nombre:"Zanahoria", precio: "0.59",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/abdeb1570f842445e535248957d545b6.340.340.0.min.wmark.6c429224.jpg"},
+           {id:25, nombre:"Pollo entero", precio: "6.17",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/81e85acee2956b25f5e5b75dfbc1b4b7.340.340.0.min.wmark.569b7f91.jpg"},
            {id:26, nombre:"Tomate", precio: "0.62",  lugar:"mercadona", thumbnailUrl: "https://www.sakata.com.br/imagens/img-encantador.jpg"},
-           {id:27, nombre:"Fanta 2L", precio: "1.52",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1048290/resize/1600/1600/3.jpg"},
-           {id:28, nombre:"Nutela", precio: "2.95",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/159551/resize/600/600/3.jpg"},
-           {id:29, nombre:"Donut", precio: "1.35",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1059382/resize/1600/1600/3.jpg"},
-           {id:30, nombre:"Aceite de Oliva", precio: "4",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1047488/resize/1600/1600/3.jpg"},
-           {id:31, nombre:"Legumbre", precio: "0.78",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1048857/resize/1600/1600/3.jpg"},
-           {id:32, nombre:"Aquarius", precio: "1.50",  lugar:"mercadona", thumbnailUrl: "https://cdn.deliberry.com/images/1048072/resize/1600/1600/3.jpg"},
-           {id:33, nombre:"Lejia", precio: "0.80",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/le/lejia-normal-bosque-verde-de-mercadona-1649684690_m.jpg"},
-           {id:34, nombre:"Amoniaco", precio: "1.20",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/am/amoniaco-perfumado-de-mercadona-1649684554_m.jpg"},
-           {id:35, nombre:"Suavizante", precio: "2.00",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/su/suavizante-para-ropa-de-concentrado-floral-bosque-verde-de-larga-duracion-botella-de-2-l-de-mercadona-1649684839_m.jpg"},
-           {id:36, nombre:"Toallitas bebé frescas", precio: "1.05",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/to/toallitas-humedas-bebe-frescas-y-perfumadas-con-aloe-vera-2-de-mercadona-1649698407_m.jpg"},
-           {id:37, nombre:"Quitagrasas KH-7", precio: "3.40",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/de/desengrasante-cocinas-y-tejidos-pistola-de-mercadona-1649706194_m.jpg"},
-           {id:38, nombre:"Escoba", precio: "1.15",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/es/escoba-basica-gris-de-mercadona-1649697283_m.jpg"},
-           {id:39, nombre:"Fregona Microfibra", precio: "1.50",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/fr/fregona-de-hilos-de-microfibra-bosque-verde-de-mercadona-1649684568_m.jpg"},
-           {id:40, nombre:"Recogedor", precio: "1.45",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/re/recogedor-con-palo-gris-antivuelco-de-mercadona-1649696677_m.jpg"},
+           {id:27, nombre:"Fanta 2L", precio: "1.52",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/cd8636e51ea3bfe16cd9df45426c7c41.110.110.0.min.wmark.d89959d3.jpg"},
+           {id:28, nombre:"Nutela", precio: "2.95",  lugar:"mercadona", thumbnailUrl: "https://a2.soysuper.com/3d638bd032284a1c6c3967cc984ba5a7.110.110.0.min.wmark.9777e6a2.jpg"},
+           {id:29, nombre:"Donut", precio: "1.35",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/ef406b2f8c02c1c8463d2140e8eaf7f3.340.340.0.min.wmark.b23d2b70.jpg"},
+           {id:30, nombre:"Aceite de Oliva", precio: "4",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/bc97351c4df54a2f073767ff74095a08.110.110.0.min.wmark.cd9f4cf5.jpg"},
+           {id:31, nombre:"Legumbre", precio: "0.78",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/6ba380c3535982d491629b9793a71942.110.110.0.min.wmark.badb9b79.jpg"},
+           {id:32, nombre:"Aquarius", precio: "1.50",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/22a75898aa0d6645bf67d57eb1c78f3e.110.110.0.min.wmark.1e3eeea2.jpg"},
+           {id:33, nombre:"Lejia", precio: "0.80",  lugar:"mercadona", thumbnailUrl: "https://a2.soysuper.com/0c89ccf1eb04b4cd81aab04d8048a258.110.110.0.min.wmark.9bb524d0.jpg"},
+           {id:34, nombre:"Amoniaco", precio: "1.20",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/a94ce5015af16a68482a7a22cf85a8b4.110.110.0.min.wmark.5bcf6cb3.jpg"},
+           {id:35, nombre:"Suavizante", precio: "2.00",  lugar:"mercadona", thumbnailUrl: "https://a2.soysuper.com/33b15aeb435527f6dcb8c30e11a01d39.110.110.0.min.wmark.0ced3a83.jpg"},
+           {id:36, nombre:"Toallitas bebé frescas", precio: "1.05",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/thttps://a2.soysuper.com/09e5b6022a22c35e48a6efc425f11423.110.110.0.min.wmark.50da94b5.jpg"},
+           {id:37, nombre:"Quitagrasas KH-7", precio: "3.40",  lugar:"mercadona", thumbnailUrl: "https://a0.soysuper.com/43b97ad396f6646d485f3bad821fad2a.110.110.0.min.wmark.a3425423.jpg"},
+           {id:38, nombre:"Escoba", precio: "1.15",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/e95e453802b0dccedf5d6d99885005ff.110.110.0.min.wmark.b81602a6.jpg"},
+           {id:39, nombre:"Fregona Microfibra", precio: "1.50",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/019f984af0a0d2b1f2143d58267e7360.110.110.0.min.wmark.549d5bb2.jpg"},
+           {id:40, nombre:"Recogedor", precio: "1.45",  lugar:"mercadona", thumbnailUrl: "https://a1.soysuper.com/80c92145370ff7b320beb4c285b2d83e.340.340.0.min.wmark.973e286a.jpg"},
            {id:41, nombre:"Salchichas cocidas", precio: "1.95",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/sa/salchicha-frankfurt-de-mercadona-1649691134_m.jpg"},
            {id:42, nombre:"Vinagre de vino blanco", precio: "0.62",  lugar:"mercadona", thumbnailUrl: "https://d2ohdpvxj0yo9f.cloudfront.net/products/vi/vinagre-de-vino-blanco-de-mercadona-1649681711_m.jpg"},
            {id:43, nombre:"Palo fregona / escoba universal gris", precio: "0.90 ",  lugar:"mercadona", thumbnailUrl: "https://a2.soysuper.com/c7f0e276665e70ca1a9fad5a337657d9.1500.0.0.0.wmark.5e81af5b.jpg"},
@@ -434,35 +429,35 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- function load_list(){
- if(ls.getItem("dataForm")!==null){
-   formulario=js.parse(ls.getItem("dataForm"));
-   for (let i=0;i<1;i++) {
-          Object.values(formulario).forEach(producto => {
-          templetcar.querySelector("#e").value = producto.id
-          templetcar.querySelectorAll("td")[0].textContent = producto.nombre
-          templetcar.querySelectorAll("td")[1].textContent = producto.cantidad
-          templetcar.querySelector("#me").textContent = producto.lugar
-          templetcar.querySelector(".btn-info").dataset.id = producto.id
-          templetcar.querySelector(".btn-danger").dataset.id = producto.id
-          templetcar.querySelector("#span").value = producto.cantidad * producto.precio;
-          const clone = templetcar.cloneNode(true)
-          fragment.appendChild(clone)
-    })}
-        items.appendChild(fragment)
-        footer.innerHTML =""
-  const ncantidad = Object.values(formulario).reduce((acc,{cantidad}) => acc + cantidad,0)
-  const nprecio = Object.values(formulario).reduce((acc,{cantidad,precio}) => acc + cantidad * precio,0)
-  templetfooter.querySelectorAll("td")[0].textContent = ncantidad
-  templetfooter.querySelector("span").textContent = nprecio
-  const clone = templetfooter.cloneNode(true)
-  fragment.appendChild(clone)
-  footer.appendChild(fragment)  
-
-ls.setItem("dataForm",js.stringify(formulario));
-
+function load_list(){
+	if(ls.getItem("dataForm")!==null){
+		formulario = js.parse(ls.getItem("dataForm"));
+		for (let i = 0; i < 1; i++) {
+		    Object.values(formulario).forEach(producto => {
+		    	templetcar.querySelector("#e").value = producto.id
+		    	templetcar.querySelectorAll("td")[0].textContent = producto.nombre
+		    	templetcar.querySelectorAll("td")[1].textContent = producto.cantidad
+		    	templetcar.querySelector("#me").textContent = producto.lugar
+		    	templetcar.querySelector(".btn-info").dataset.id = producto.id
+		    	templetcar.querySelector(".btn-danger").dataset.id = producto.id
+		    	templetcar.querySelector("#span").value = producto.cantidad * producto.precio;
+		    	const clone = templetcar.cloneNode(true)
+		    	fragment.appendChild(clone)
+				})
+		}
+		items.appendChild(fragment)
+		footer.innerHTML = ""
+		const ncantidad = Object.values(formulario).reduce((acc,{cantidad}) => acc + cantidad,0)
+		const nprecio = Object.values(formulario).reduce((acc,{cantidad, precio}) => acc + cantidad * precio,0).toFixed(2);
+		console.log(nprecio);
+		templetfooter.querySelectorAll("td")[0].textContent = ncantidad
+		templetfooter.querySelector("span").textContent = nprecio;
+		const clone = templetfooter.cloneNode(true)
+		fragment.appendChild(clone)
+		footer.appendChild(fragment)
+		ls.setItem("dataForm",js.stringify(formulario));
 }}
- load_list();
+load_list();
 
 
 
@@ -499,58 +494,60 @@ function load_free(){
   }
 }
 ///////////////////////////////////////////registro de supermercados\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 load_free();
-function addSuper(iSuper){
-if (iSuper!==""){
-  if (ls.getItem("dataSup")!==null){
-     hipers=js.parse(ls.getItem("dataSup")); 
-        if(hipers.indexOf(iSuper)==-1) {
-          var numero1=0;
-              for (let i = 0; i < hipers.length; i++) {
-                numero1++
-              }
-          var newSuper=iSuper;
-          hipers.push(newSuper);
-          ls.setItem("dataSup",js.stringify(hipers));
-          let cuadro = document.querySelector(".cuadroo");
-            for(i=0;i<1;i++){
-              let img = document.createElement("img");
-              let botondelet = document.createElement("button");
-              let caja2 = document.createElement("div");
-              let caja3=document.createElement("div");
-              caja2.setAttribute("class","caja2");
-              caja3.setAttribute("id",iSuper)
-              caja3.setAttribute("class","caja3");
-              botondelet.setAttribute("class","borrarmercado" );
-              botondelet.textContent="x";
-              img.setAttribute("src","tienda.png");
-              let opcion = document.createElement("option");
-              let caja = document.createElement("div");
-              let p = document.createElement("p");
-                        
-              caja.setAttribute("class","listaDeSupermercados"); 
-              p.innerHTML = document.querySelector("#input-configuracionDeSupermercado").value;
-              caja2.appendChild(img);
-              caja2.appendChild(p);
-              caja.appendChild(caja2);
-              caja.appendChild(botondelet);
-              cuadro.appendChild(caja);
-              cuadro.appendChild(caja3);
-              opcion.textContent = document.querySelector("#input-configuracionDeSupermercado").value;
-              mercadosNombre.appendChild(opcion);
-              totalPro();
-      } 
-     }else{
-       // if (hipers.indexOf(iSuper)=-1) {}
-        console.log("registrado");
-        }
-    }  
 
-}else{
-    alert("Introducir Un SuperMercado o Tienda");
-  }
-}
+function addSuper(iSuper){
+	if (iSuper !== "")
+	{
+		if (ls.getItem("dataSup")!==null)
+		{
+			hipers=js.parse(ls.getItem("dataSup")); 
+			if(hipers.indexOf(iSuper)==-1)
+			{
+			    var numero1=0;
+			    for (let i = 0; i < hipers.length; i++) {
+			    	numero1++
+			    }
+			    var newSuper=iSuper;
+			    hipers.push(newSuper);
+			    ls.setItem("dataSup",js.stringify(hipers));
+			    let cuadro = document.querySelector(".cuadroo");
+			    for(i=0;i<1;i++){
+			        let img = document.createElement("img");
+			        let botondelet = document.createElement("button");
+			        let caja2 = document.createElement("div");
+			        let caja3=document.createElement("div");
+			        caja2.setAttribute("class","caja2");
+			        caja3.setAttribute("id",iSuper)
+			        caja3.setAttribute("class","caja3");
+			        botondelet.setAttribute("class","borrarmercado" );
+			        botondelet.textContent="x";
+			        img.setAttribute("src","tienda.png");
+			        let opcion = document.createElement("option");
+			        let caja = document.createElement("div");
+			        let p = document.createElement("p");
+			      	caja.setAttribute("class","listaDeSupermercados"); 
+			    	p.innerHTML = document.querySelector("#input-configuracionDeSupermercado").value;
+			    	caja2.appendChild(img);
+			    	caja2.appendChild(p);
+			    	caja.appendChild(caja2);
+			    	caja.appendChild(botondelet);
+			    	cuadro.appendChild(caja);
+			    	cuadro.appendChild(caja3);
+			    	opcion.textContent = document.querySelector("#input-configuracionDeSupermercado").value;
+			    	mercadosNombre.appendChild(opcion);
+			    	totalPro();
+				} 
+			}else{
+			   // if (hipers.indexOf(iSuper)=-1) {}
+			    // console.log("registrado");
+			    alert("Supermercado registrado");
+			}
+		}  
+	}else{
+	    alert("Introducir Un SuperMercado o Tienda");
+	  }
+	}
 
 
 //tengo que buscar una condicion que me lea el Ls y me indique que ya tengo el supermercado.  
@@ -558,43 +555,42 @@ document.querySelector("#boto-guargarSupermercado").addEventListener('click',sav
   function saveSuper(){ 
     var sSuper=document.querySelector("#input-configuracionDeSupermercado").value;
     addSuper(sSuper);
-  } 
+} 
 
 ////////////////////////////////////dibuja loque haya en el local store de los super mercados\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function load_hipers(){
  // js.parce(ls.getItem("dataSup"));
-  for (var i = 0; i < hipers.length; i++) {
-    //console.log("cargar los supermercados y crearlos en pantalla "+hipers[i])
-    let cuadro = document.querySelector(".cuadroo");
-        for(j=0;j<1;j++){
-        let img = document.createElement("img");
-        let botondelet = document.createElement("button");
-        let caja2 = document.createElement("div");
-        let caja3=document.createElement("div");
-        caja2.setAttribute("class","caja2");
-        caja3.setAttribute("id",hipers[i])
-        caja3.setAttribute("class","caja3");
-        botondelet.setAttribute("class","borrarmercado" );
-        botondelet.textContent="x";
-        img.setAttribute("src","tienda.png");
-        let opcion = document.createElement("option");
-        let caja = document.createElement("div");
-        let p = document.createElement("p"); 
-        ///////////////////lista de los productos/////////////////////////////////
-        caja.setAttribute("class","listaDeSupermercados");
-        p.innerHTML = hipers[i];
-
-        caja2.appendChild(img);
-        caja2.appendChild(p);
-        caja.appendChild(caja2);
-        caja.appendChild(botondelet);
-        cuadro.appendChild(caja);
-        cuadro.appendChild(caja3);
-        opcion.textContent = hipers[i];
-        mercadosNombre.appendChild(opcion);
-        ls.setItem("dataSup",js.stringify(hipers)); 
-     }
-  }
+	for (var i = 0; i < hipers.length; i++) {
+		//console.log("cargar los supermercados y crearlos en pantalla "+hipers[i])
+		let cuadro = document.querySelector(".cuadroo");
+		for(j = 0; j < 1; j++){
+		    let img = document.createElement("img");
+		    let botondelet = document.createElement("button");
+		    let caja2 = document.createElement("div");
+		    let caja3=document.createElement("div");
+		    caja2.setAttribute("class","caja2");
+		    caja3.setAttribute("id",hipers[i])
+		    caja3.setAttribute("class","caja3");
+		    botondelet.setAttribute("class","borrarmercado" );
+		    botondelet.textContent="Borrar";
+		    img.setAttribute("src","tienda.png");
+		    let opcion = document.createElement("option");
+		    let caja = document.createElement("div");
+		    let p = document.createElement("p"); 
+		    ///////////////////lista de los productos/////////////////////////////////
+		    caja.setAttribute("class","listaDeSupermercados");
+		    p.innerHTML = hipers[i];
+		    caja2.appendChild(img);
+		    caja2.appendChild(p);
+		    caja.appendChild(caja2);
+		    caja.appendChild(botondelet);
+		    cuadro.appendChild(caja);
+		    cuadro.appendChild(caja3);
+		    opcion.textContent = hipers[i];
+		    mercadosNombre.appendChild(opcion);
+		    ls.setItem("dataSup",js.stringify(hipers)); 
+		}
+	}
 
 }
 load_hipers(hipers); 
@@ -614,6 +610,7 @@ load_hipers(hipers);
                if (divs[j].id.includes("General")) {
                     var ul = document.createElement("ul");
                     let li = document.createElement("li");
+					let box_info = document.createElement("div");
                     let imagen = document.createElement("img")
                     let pm1 = document.createElement("p")
                     let pm2 = document.createElement("h3")
@@ -630,11 +627,13 @@ load_hipers(hipers);
                     boton.dataset.id = totalProduc[i].id
                     li.classList.add("hipers1")
                     ul.classList.add("producs")
+					box_info.classList.add('box_info');
                     li.appendChild(imagen)
-                    li.appendChild(pm1)
-                    li.appendChild(pm2)
-                    li.appendChild(pm3)
-                    li.appendChild(euro)
+                    box_info.appendChild(pm1)
+                    box_info.appendChild(pm2)
+                    box_info.appendChild(pm3)
+                    box_info.appendChild(euro)
+					li.appendChild(box_info);
                     li.appendChild(boton);  
                     ul.appendChild(li);
                     divs[j].appendChild(ul);
@@ -747,7 +746,7 @@ buscador.addEventListener("keyup", filtrar)////buscador
           h1.textContent = productosf.nombre;
           h2.textContent = productosf.precio;
           h3.textContent = productosf.lugar;
-          btn.textContent = "Añadirrr"
+          btn.textContent = "Añadir"
           btn.dataset.id = productosf.id
           li.appendChild(h1);
           li.appendChild(h2);
@@ -914,15 +913,17 @@ document.querySelector("#button_Register").addEventListener("click",frecuentes);
                     //recorro las variables y le las agrego a cada una de las lfilas dela tabla
                     if (ls.getItem("dataForm")!==null) {
                        Object.values(formulario).forEach(producto => {
-                          templetcar.querySelector("#e").value = producto.id
-                          templetcar.querySelectorAll("td")[0].textContent = producto.nombre
-                          templetcar.querySelectorAll("td")[1].textContent = producto.cantidad
-                          templetcar.querySelector("#me").textContent = producto.lugar
-                          templetcar.querySelector(".btn-info").dataset.id = producto.id
-                          templetcar.querySelector(".btn-danger").dataset.id = producto.id
-                          templetcar.querySelector("#span").value = producto.cantidad * producto.precio;
-                          const clone = templetcar.cloneNode(true)
-                          fragment.appendChild(clone)
+						let tot_pro = producto.cantidad * producto.precio;
+						console.log(tot_pro);
+						templetcar.querySelector("#e").value = producto.id
+						templetcar.querySelectorAll("td")[0].textContent = producto.nombre
+						templetcar.querySelectorAll("td")[1].textContent = producto.cantidad
+						templetcar.querySelector("#me").textContent = producto.lugar
+						templetcar.querySelector(".btn-info").dataset.id = producto.id
+						templetcar.querySelector(".btn-danger").dataset.id = producto.id
+						templetcar.querySelector("#span").value = tot_pro.toFixed(2);
+						const clone = templetcar.cloneNode(true)
+						fragment.appendChild(clone)
                     })
                         items.appendChild(fragment)
                         pintanfooter()
@@ -951,7 +952,7 @@ document.querySelector("#button_Register").addEventListener("click",frecuentes);
                  const ncantidad = Object.values(formulario).reduce((acc,{cantidad}) => acc + cantidad,0)
                  const nprecio = Object.values(formulario).reduce((acc,{cantidad,precio}) => acc + cantidad * precio,0)
                  templetfooter.querySelectorAll("td")[0].textContent = ncantidad
-                 templetfooter.querySelector("span").textContent = nprecio
+                 templetfooter.querySelector("span").textContent = nprecio.toFixed(2);
                  const clone = templetfooter.cloneNode(true)
                  fragment.appendChild(clone)
                  footer.appendChild(fragment)   
